@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- manish 1 -->
+    <meta charset="UTF-8">
+    <!-- manish 2 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- manish 3 -->
+    <title>Ever Winter</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: url('assets/winterbgm.jpg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            position: relative;
+        }
+        header {
+            width: 100vw;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+            padding: 1rem 0;
+            background: rgba(255,255,255,0.2); /* Translucent and blurred */
+            color: #1e40af;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+            backdrop-filter: blur(20px);
+            border-bottom: 2px solid rgba(96,165,250,0.5);
+        }
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1.5rem;
+        }
+        .header-inner h1 {
+            font-size: 2.618rem; /* Golden ratio applied */
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 0 2px 8px rgba(30,64,175,0.2);
+        }
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+        nav a {
+            font-size: 1.618rem; /* Golden ratio applied */
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            color: #fff;
+            background: rgba(96,165,250,0.2);
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+        }
+        nav a:hover, nav a.active {
+            background: rgba(96,165,250,0.5);
+            color: #1e40af;
+        }
+        main {
+            margin-top: 6rem;
+            margin-bottom: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #home {
+            max-width: 1200px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+        }
+        .section-title {
+            font-size: 2.618rem; /* Golden ratio applied */
+            font-weight: 700;
+            color: #1e40af;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .quotes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            width: 100%;
+            background: rgba(255,255,255,0.3);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 16px rgba(30,64,175,0.1);
+            backdrop-filter: blur(12px);
+        }
+        .quote-block {
+            background: rgba(248,250,252,0.8);
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 2px 8px rgba(30,64,175,0.1);
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .quote-block:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(30,64,175,0.2);
+        }
+        .quote-block blockquote {
+            font-style: italic;
+            color: #1e40af;
+            font-size: 1rem; /* Kept consistent for readability */
+            margin: 0;
+        }
+        .home-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            width: 100%;
+            background: rgba(255,255,255,0.3);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 16px rgba(30,64,175,0.1);
+            backdrop-filter: blur(12px);
+        }
+        .home-images img {
+            width: 200px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(30,64,175,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .home-images img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(30,64,175,0.2);
+        }
+        footer {
+            font-size: 1.618rem; /* Golden ratio applied */
+            width: 100vw;
+            position: fixed;
+            bottom: 0;
+            background: rgba(255,255,255,0.2); /* Translucent and blurred */
+            color: #1e40af;
+            text-align: center;
+            padding: 1rem 0;
+            box-shadow: 0 -4px 16px rgba(0,0,0,0.1);
+            backdrop-filter: blur(20px);
+            border-top: 2px solid rgba(96,165,250,0.5);
+        }
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .quotes-grid {
+                grid-template-columns: 1fr;
+            }
+            .home-images img {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- manish 4 -->
+    <header>
+        <!-- manish 5 -->
+        <div class="header-inner">
+            <!-- manish 6 -->
+            <h1>Ever Winter</h1>
+            <nav>
+                <a href="index.html" class="nav-link active">Home</a> <!-- Added 'active' class -->
+                <a href="about.html" class="nav-link">About</a> <!-- Removed 'active' class -->
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <!-- manish 7 -->
+    <main>
+        <!-- manish 8 -->
+        <section id="home">
+            <!-- manish 9 -->
+            <div class="section-title">Inspirational Quotes</div>
+            <div class="quotes-grid">
+                <div class="quote-block">
+                    <blockquote>
+                        The ending isn't any more important than any of the moments leading to it. The important thing is that over here, they are happy.
+                    </blockquote>
+                </div>
+                <div class="quote-block">
+                    <blockquote>
+                        You have within you, right now, everything you need to deal with whatever the world can throw at you.
+                    </blockquote>
+                </div>
+                <div class="quote-block">
+                    <blockquote>
+                        The only impossible journey is the one you never begin.
+                    </blockquote>
+                </div>
+                <div class="quote-block">
+                    <blockquote>
+                        Be yourself; everyone else is already taken.
+                    </blockquote>
+                </div>
+                <div class="quote-block">
+                    <blockquote>
+                        When you have a dream, you've got to grab it and never let go.
+                    </blockquote>
+                </div>
+            </div>
+            <div class="home-images">
+                <img src="assets/1.jpg" alt="Winter scene 1">
+                <img src="assets/2.jpg" alt="Winter scene 2">
+                <img src="assets/3.jpg" alt="Winter scene 3">
+                <img src="assets/4.jpg" alt="Winter scene 4">
+            </div>
+        </section>
+    </main>
+    <!-- manish 10 -->
+    <footer>
+        <p>&copy; 2025 Ever Winter. All rights reserved.</p>
+    </footer>
+    <!-- manish 11 -->
+    <script src="scripts/app.js"></script>
+</body>
+</html>

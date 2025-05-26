@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- manish 1 -->
+    <meta charset="UTF-8">
+    <!-- manish 2 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- manish 3 -->
+    <title>Winter - Ever Winter</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        * {
+            box-sizing: border-box; /* Ensures consistent spacing calculations */
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: url('assets/winterbgm.jpg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            position: relative;
+        }
+        header {
+            width: 100vw;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+            padding: 1rem 0;
+            background: rgba(255,255,255,0.2); /* Translucent and blurred */
+            color: #1e40af;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+            backdrop-filter: blur(20px);
+            border-bottom: 2px solid rgba(96,165,250,0.5);
+        }
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1.5rem;
+        }
+        .header-inner h1 {
+            font-size: 2.618rem; /* Golden ratio applied */
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 0 2px 8px rgba(30,64,175,0.2);
+        }
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+        nav a {
+            font-size: 1.618rem; /* Golden ratio applied */
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            color: #fff;
+            background: rgba(96,165,250,0.2);
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+        }
+        nav a:hover, nav a.active {
+            background: rgba(96,165,250,0.5);
+            color: #1e40af;
+        }
+        main {
+            margin-top: calc(2rem + 80px); /* Increased spacing below the header */
+            margin-bottom: calc(2rem + 80px); /* Increased spacing above the footer */
+            max-width: 1200px;
+            padding: 2.5rem; /* Increased padding for better readability */
+            background: rgba(255,255,255,0.95);
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        main h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #1e40af;
+        }
+        main h2 {
+            font-size: 2rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #2563eb;
+        }
+        main p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        main ul {
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+        }
+        main ul li {
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+        aside {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: #f1f5f9;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        aside h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1e40af;
+        }
+        aside ul {
+            padding-left: 1.5rem;
+        }
+        aside ul li {
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+        footer {
+            font-size: 1.2rem;
+            width: 100vw;
+            position: fixed;
+            bottom: 0;
+            background: rgba(255,255,255,0.2);
+            color: #1e40af;
+            text-align: center;
+            padding: 1rem 0;
+            box-shadow: 0 -4px 16px rgba(0,0,0,0.1);
+            backdrop-filter: blur(20px);
+            border-top: 2px solid rgba(96,165,250,0.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- manish 4 -->
+    <header>
+        <!-- manish 5 -->
+        <div class="header-inner">
+            <!-- manish 6 -->
+            <h1>Ever Winter</h1>
+            <!-- ...existing code... -->
+        </div>
+    </header>
+    <!-- manish 7 -->
+    <main>
+        <!-- manish 8 -->
+        <img src="assets/winterbgm.jpg" alt="Winter Landscape" style="width: 100%; border-radius: 12px; margin-bottom: 1.5rem; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);">
+        <!-- manish 9 -->
+        <p><strong>Winter</strong> is the coldest season of the year in polar and temperate zones. It occurs after autumn and before spring in each year.</p>
+        <h2>Characteristics</h2>
+        <p>Winter is often associated with snow, ice, and cold temperatures. It is a time when many animals hibernate, and plants enter a dormant state.</p>
+        <ul>
+            <li>Shorter days and longer nights.</li>
+            <li>Snowfall in many regions.</li>
+            <li>Freezing temperatures in colder climates.</li>
+        </ul>
+        <h2>Activities</h2>
+        <p>Winter offers a variety of activities that people enjoy:</p>
+        <ul>
+            <li>Skiing and snowboarding.</li>
+            <li>Building snowmen and having snowball fights.</li>
+            <li>Drinking hot chocolate by the fire.</li>
+        </ul>
+        <aside>
+            <h3>Did You Know?</h3>
+            <ul>
+                <li>The winter solstice marks the shortest day of the year.</li>
+                <li>Antarctica experiences winter for six months straight.</li>
+                <li>Snowflakes are unique and no two are exactly alike.</li>
+            </ul>
+        </aside>
+    </main>
+    <!-- manish 10 -->
+    <footer>
+        <p>&copy; 2025 Ever Winter. All rights reserved.</p>
+    </footer>
+</body>
+</html>
