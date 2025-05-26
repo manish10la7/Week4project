@@ -63,6 +63,7 @@
         nav a:hover, nav a.active {
             background: rgba(96,165,250,0.5);
             color: #1e40af;
+            box-shadow: 0 4px 8px rgba(30,64,175,0.3); /* Add shadow effect */
         }
         main {
             margin-top: calc(2rem + 80px); /* Increased spacing below the header */
@@ -141,7 +142,11 @@
         <div class="header-inner">
             <!-- manish 6 -->
             <h1>Ever Winter</h1>
-            <!-- ...existing code... -->
+            <nav>
+                <a href="index.html" class="nav-link">Home</a> <!-- Removed 'active' class -->
+                <a href="about.html" class="nav-link active">About</a> <!-- Added 'active' class -->
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
         </div>
     </header>
     <!-- manish 7 -->
